@@ -1,0 +1,101 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Usamos la fuente Poppins */
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #1D1F21; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    padding-left: 20px;
+    letter-spacing: 1px; /* Espaciado para una apariencia más moderna */
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Galería de videos */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
+    gap: 20px;
+    padding: 20px 0;
+    justify-items: center; /* Centra los elementos de la galería */
+}
+
+.video-container {
+    width: 80%; /* Ocupa el 80% del ancho del contenedor */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Coloca el texto debajo del video */
+    justify-content: flex-start;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase; /* Da un toque moderno */
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50; /* Gris oscuro metálico */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Sombra superior */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .video-gallery {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .video-container {
+        width: 90%; /* En pantallas pequeñas, los videos ocupan el 90% del ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
