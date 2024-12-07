@@ -7,16 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif; 
-    background-color: #f8f9fa;
+    background-color: #0e0e11;
     color: #333;
-}
-
-header {
-    background-color: #1D1F21; 
-    color: #fff; 
-    padding: 20px 0;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
 }
 
 h1 {
@@ -24,14 +16,29 @@ h1 {
     font-size: 2rem;
     padding-left: 20px;
     letter-spacing: 1px; 
+    color: white;
 }
 
-/* Contenedor principal */
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
+.ContainerHeader {
+    width: 100%;
+    border-color: rgb(136, 136, 136);
+    backdrop-filter:blur(10);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(20px);
 }
+
+
+
+/* Contenedor principal */
+.ContentHeader{
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+    padding: 1em;
+}
+
 
 /* Galería de videos */
 .video-gallery {
@@ -40,20 +47,24 @@ h1 {
     gap: 20px;
     padding: 20px 0;
     justify-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+    
 }
 
 .video-container {
-    width: 80%; 
-    background-color: #fff;
+    width: 90%; 
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     text-align: center;
+    border: 1px solid #333;
     padding: 10px;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
-}
+    background-color: #000000;
+    }
 
 video {
     width: 100%;
@@ -65,7 +76,7 @@ p {
     margin-top: 15px;
     font-size: 1rem;
     font-weight: 500;
-    color: #333;
+    color: #ffffff;
     text-transform: uppercase; 
     letter-spacing: 1px;
     padding: 10px 0;
@@ -73,14 +84,20 @@ p {
 
 /* Footer */
 footer {
-    background-color: #2C3E50; 
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); 
+    height: 100px;
+    border-top: 1px  solid rgb(136, 136, 136);
+    backdrop-filter: blur(20px);
+    position: static;
+    bottom: 0;
+
+}
+
+.ContentFooter{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 /* Responsividad */
