@@ -6,24 +6,24 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif; /* Usamos la fuente Poppins */
+    font-family: 'Poppins', sans-serif; 
     background-color: #f8f9fa;
     color: #333;
 }
 
 header {
-    background-color: #1D1F21; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
+    background-color: #1D1F21; 
+    color: #fff; 
     padding: 20px 0;
     text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
 }
 
 h1 {
     margin: 0;
     font-size: 2rem;
     padding-left: 20px;
-    letter-spacing: 1px; /* Espaciado para una apariencia más moderna */
+    letter-spacing: 1px; 
 }
 
 /* Contenedor principal */
@@ -36,14 +36,14 @@ h1 {
 /* Galería de videos */
 .video-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
     padding: 20px 0;
-    justify-items: center; /* Centra los elementos de la galería */
+    justify-items: center; 
 }
 
 .video-container {
-    width: 80%; /* Ocupa el 80% del ancho del contenedor */
+    width: 80%; 
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
@@ -51,7 +51,7 @@ h1 {
     text-align: center;
     padding: 10px;
     display: flex;
-    flex-direction: column; /* Coloca el texto debajo del video */
+    flex-direction: column; 
     justify-content: flex-start;
 }
 
@@ -66,31 +66,31 @@ p {
     font-size: 1rem;
     font-weight: 500;
     color: #333;
-    text-transform: uppercase; /* Da un toque moderno */
+    text-transform: uppercase; 
     letter-spacing: 1px;
     padding: 10px 0;
 }
 
 /* Footer */
 footer {
-    background-color: #2C3E50; /* Gris oscuro metálico */
+    background-color: #2C3E50; 
     color: #fff;
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Sombra superior */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
     .video-gallery {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr; 
     }
 
     .video-container {
-        width: 90%; /* En pantallas pequeñas, los videos ocupan el 90% del ancho */
+        width: 90%; 
     }
 }
 
